@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+</head>
+<style>
+    .active{
+        background-color: rgb(137, 149, 88);
+    }
+</style>
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="navbar">
+    <a class = "active" href="#Home">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">About Us <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#company">Company</a>
+        <a href="#team">Team</a>
+        <a href="#careers">Careers</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Products <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#Product1">Product1</a>
+        <a href="#Product2">Product2</a>
+        <a href="#Product3">Product3</a>
+        <a href="#Product4">Product4</a>
+      </div>
+    </div>
+    <div class="subnav">
+      <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#Service1">Service1</a>
+        <a href="#Service2">Service2</a>
+        <a href="{% url 'upload' %}">Upload Business Card</a>
+        <a href="#Service4">Service4</a>
+      </div>
+    </div>
+    <a href="#contact">Contact Us</a>
+    <div class="topnav-right">
+      <a href="https://www.linkedin.com/in/selin-sevcan-%C3%A7akan-a26454284/" title = "Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/selin-sevcan-%C3%A7akan-a26454284/" title ="Instagram"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/selin-sevcan-%C3%A7akan-a26454284/" title = "X"><i class="fa fa-twitter"></i></a>
+      <input type = "text" placeholder = "Search...">
+      <button class="btn" title ="ltfn para vr"><i class="fa fa-dollar"></i> Donate</button>
+    </div>
+  </div>
+  
+  
+  
+</body>
+</html>
+
+

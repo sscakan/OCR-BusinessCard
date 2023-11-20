@@ -1,0 +1,197 @@
+
+
+.container {
+  max-width: 500px;
+  margin-top: 100px;
+  margin-left: 390px;
+  margin-right: 390px;
+  margin-bottom: 150px;
+  padding: 300px 300px 300px 300px;
+  background-color:rgb(193, 190, 190);
+  border: double;
+  border-radius: 5px;
+  border-color: #9a9769af;
+  box-shadow: 0 0 10px rgba(26, 81, 109, 0.1);
+}
+
+
+body{
+  background-color: rgb(228, 221, 221);
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+}
+
+button {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black; 
+  display: inline-block;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: rgb(137, 149, 88);
+}
+
+
+.custom-file-label {
+  background-color: #00050a;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black; 
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+
+
+}
+
+.custom-file-label:hover {
+  background-color: rgb(137, 149, 88);
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  max-width: 2000px;
+  padding: 0;
+  margin: 0 ;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  margin: 0;
+}
+
+/* Subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* Subnavigation button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 0px;
+}
+
+/* üstündeyken renk değiş */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:  rgb(137, 149, 88);
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(235, 235, 214);
+  width: 100%;
+  z-index: 1;
+}
+
+/*subnav links */
+.subnav-content a {
+  float: left;
+  color: black;
+
+  text-decoration: none;
+}
+
+/*submenu background*/
+.subnav-content a:hover {
+  background-color: rgb(137, 149, 88);
+  color: black;
+}
+
+/* move the mouse over the subnav container to open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/*facebook logo */
+.topnav-right{
+  float: right;
+  text-align: center;
+}
+
+/*donate button*/
+
+.btn {
+  border: none; 
+  background-color: black;
+  color: white; 
+  padding: 14px 16px; 
+  font-size: smaller; 
+  cursor: pointer; 
+  text-align: center;
+}
+
+.btn:hover{
+  background-color: #00050a;
+}
+
+
+/*search bar*/
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 5px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
